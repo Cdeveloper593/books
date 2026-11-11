@@ -140,20 +140,12 @@
         color: var(--navy);
         font-size: 20px;
         font-weight: 800;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         transition: transform 0.25s cubic-bezier(0.34, 1.56, 0.64, 1);
       }
-      .cta {
-        height: 48px;
-        padding: 0 26px;
-        border-radius: 999px;
-        background: var(--cream);
-        color: var(--navy);
-        font-weight: 600;
-        font-size: 16px;
-        transition: transform 0.25s cubic-bezier(0.34, 1.56, 0.64, 1);
-      }
-      .menu-btn:hover,
-      .cta:hover {
+      .menu-btn:hover {
         transform: scale(1.05);
       }
 
@@ -496,8 +488,20 @@
     <nav>
       <div class="logo">Bestsellers</div>
       <div class="nav-r">
-        <button class="menu-btn" aria-label="Menu">=</button>
-        <button class="cta">Get Tickets</button>
+        <button class="menu-btn" aria-label="Menu">
+          <svg
+            viewBox="0 0 24 24"
+            width="20"
+            height="20"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2.2"
+            stroke-linecap="round"
+            aria-hidden="true"
+          >
+            <path d="M5 7h14M5 12h14M5 17h14" />
+          </svg>
+        </button>
       </div>
     </nav>
 
